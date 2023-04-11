@@ -19,7 +19,6 @@
 <!-- header section starts  -->
 
 <header>
-	<meta name="viewport" content="width=device-width", initial-scale=1.0">
     <div id="menu-bar" class="fas fa-bars"></div>
 
     <a href="#" class="logo"><span>T</span>ravel</a>
@@ -43,6 +42,45 @@
         <label for="search-bar" class="fas fa-search"></label>
     </form>
 
+    <style>
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                display: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+            #menu-bar {
+                display: block;
+                margin-top: 10px;
+            }
+            .icons {
+                margin-top: 10px;
+            }
+            #search-btn {
+                font-size: 20px;
+            }
+            #login-btn {
+                font-size: 20px;
+            }
+            .search-bar-container {
+                display: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+            #search-bar {
+                width: 100%;
+            }
+            label {
+                font-size: 20px;
+            }
+        }
+    </style>
 </header>
 
 <!-- header section ends -->
